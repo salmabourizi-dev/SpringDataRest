@@ -34,18 +34,32 @@ src/
 └─ application.properties
 
 
---Liste des étudiants :
+🖼️ Captures d’écran
+📋 Liste des étudiants
 
 
-<img width="827" height="978" alt="image" src="https://github.com/user-attachments/assets/65e13244-43fc-477e-80f0-efa600e26923" />
---Liste des centres :
+<img width="1292" height="703" alt="image" src="https://github.com/user-attachments/assets/dd20709d-7742-4b72-8841-df7b82d139f6" />
+
+
+
+🏫 Liste des centres
+
+
+
 
 
 <img width="802" height="984" alt="image" src="https://github.com/user-attachments/assets/f0cd395b-89eb-40f0-a0b9-d5cda4a2a72c" />
---Console H2 :
+
+
+
+🧩 Console H2
+
+
+
 
 
 <img width="981" height="572" alt="image" src="https://github.com/user-attachments/assets/c3413b2a-ac67-416d-92d1-1e216ba1b656" />
+
 
 
 
