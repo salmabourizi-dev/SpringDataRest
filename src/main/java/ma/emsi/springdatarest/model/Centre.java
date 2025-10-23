@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
 @Entity
 @Data
 @AllArgsConstructor
@@ -21,14 +20,12 @@ public class Centre {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name="nom_centre", nullable=false)
-    private String NomCentre;
+    @Column(name = "nom_centre", nullable = false)
+    private String nomCentre;
 
-    @Column(name="Adresse_centre", nullable=false)
-    private String Adresse;
+    @Column(name = "adresse_centre", nullable = false)
+    private String adresse;
 
-    @OneToMany(mappedBy = "centre")
+    @OneToMany(mappedBy = "centre", cascade = CascadeType.ALL)
     private List<Etudiant> etudiants;
-
-
 }

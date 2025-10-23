@@ -1,6 +1,5 @@
 package ma.emsi.springdatarest.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,13 +14,21 @@ import ma.emsi.springdatarest.enums.Genre;
 @Table(name = "student")
 @Builder
 public class Etudiant {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id ;
-    @Column(name = "nomEt" , nullable = false)
-    private String nom ;
-    @Column(name = "prenomEt" , nullable = false)
-    private String prenom ;
+    private int id;
+
+    @Column(name = "nomEt", nullable = false)
+    private String nom;
+
+    @Column(name = "prenomEt", nullable = false)
+    private String prenom;
+
     @Enumerated(EnumType.STRING)
-    Genre genre;
+    private Genre genre;
+
+    @ManyToOne
+    @JoinColumn(name = "centre_id")
+    private Centre centre;
 }
